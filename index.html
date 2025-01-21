@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="Logo/Captura de pantalla 2025-01-18 181416.png" class="logo">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="peliculas.html"
+                        >Peliculas</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container my-5">
+        <section id="inicio" class="mb-5">
+            <h1 class="display-4">Estudio de animación Japonés</h1>
+            <p>Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio japonés de animación, considerado por la crítica especializada y muchos cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad.</p>
+        </section>
+        <section id="acerca-de" class="mb-5">
+            <h2>Acerca de Studio Ghibli</h2>
+            <p>El estudio es conocido por sus largometrajes animados y también ha producido varios cortometrajes, comerciales de televisión y una película para televisión. Fue fundado el 15 de junio de 1985 por los directores Hayao Miyazaki e Isao Takahata y el productor Toshio Suzuki, después del éxito de la película de anime de Topcraft Nausicaä del Valle del Viento (1984). Studio Ghibli también ha colaborado con estudios de videojuegos en el desarrollo visual de varios videojuegos.
+                Seis de las películas de Studio Ghibli se encuentran entre las 10 películas de anime más taquilleras realizadas en Japón, siendo El Viaje de Chihiro (2001) la segunda más alta, recaudando más de 360 millones de dólares en todo el mundo. Muchos de sus trabajos han ganado el premio Animage Anime Grand Prix, y cinco han ganado el Premio de la Academia Japonesa de Animación del Año. Seis de las películas de Studio Ghibli han recibido nominaciones al Óscar y dos de ellas han ganado el premio. El Viaje de Chihiro ganó el Oso de Oro en 2002 y el Premio de la Academia a la mejor película de animación en 2003. El Chico y la Garza (2023) ganó de nuevo el Óscar a la mejor película de animación en 2024, además del BAFTA y el Globo de Oro a la mejor película de animación. En los premios Globo de Oro este film fue también nominado a mejor banda sonora original. Totoro, personaje principal de Mi vecino Totoro, es la mascota del estudio.
+            </p>
+            <p>Algunas de sus peliculas:</p>
+        </section>
+        <section id="servicios" class="row mb-5">
+            <div class="col-md-4">
+                <div class="service-card p-4">
+                    <h2>El viaje de Chihiro</h2>
+                    <p>El filme cuenta la historia de una niña de diez años llamada Chihiro, quien durante una mudanza se ve atrapada en un mundo mágico y sobrenatural, teniendo como misión buscar su libertad y la de sus padres, y así poder regresar a su mundo.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card p-4">
+                    <h3>El Chico y la Garza</h3>
+                    <p>Se trata de la película más simbólica y metafórica del director, pero es también la más personal. Cuando Miyazaki propuso la idea a su productor, Toshio Suzuki, advirtió a este que efectivamente haría una nueva película, pero con la condición de poder contar una historia que hablase sobre él mismo y su vida.​ El director quiso crear una película dedicada a su nieto, que sirva como testamento o enseñanza para cuando este crezca y deba enfrentarse a la vida.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card p-4">
+                    <h3>El Castillo Ambulante</h3>
+                    <p>Es la octava producción dirigida por Hayao Miyazaki dentro de Studio Ghibli y la decimoquinta del estudio. La película está ambientada en un reino ficticio en el cual tanto la magia como la tecnología del siglo XX están presentes. Sophie es una joven sombrerera que es víctima del hechizo de una bruja y que decide ir al castillo ambulante, lugar habitado por el mago Howl, para ver si puede encontrar una solución al maleficio.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <form action="enviar.php" method="POST" id="contact-form">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
