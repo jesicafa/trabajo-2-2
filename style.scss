@@ -1,0 +1,75 @@
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  .header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .sidebar {
+      width: 30%;
+      background-color: $secondary-color;
+      padding: 15px;
+      color: white;
+      @include border-radius(5px);
+    }
+
+    .main {
+      width: 65%;
+      padding: 20px;
+    }
+  }
+}
+
+
+button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  @include border-radius(5px);
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+
+
+
